@@ -16,7 +16,6 @@ setup(
           'streamlit', 
           'plotly', 
           'pillow',
-          'urllib',
           'io',
           'matplotlib',
           'wordcloud', 
