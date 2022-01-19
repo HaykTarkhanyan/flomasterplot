@@ -3,7 +3,7 @@ import pandas as pd
 import streamlit as st
 import plotly.express as px
 
-from traitlets.traitlets import default
+# from traitlets.traitlets import default
 
 from col_type_detector import *
 from plots import *
