@@ -1,6 +1,6 @@
-from helpers import * 
-from plots import *
-from col_type_detector import *
+from .helpers import * 
+from .plots import *
+from .col_type_detector import *
 import warnings
 
 ONE_NUMERIC = ['Histogram', 'Distplot']
