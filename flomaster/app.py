@@ -31,11 +31,12 @@ ONE_DATETIME_ONE_NUMERIC = ['Connected Scatter']
 # url_logo = st.sidebar.text_input('select your logo or provide a url', "")
 # if url_logo:
 #     color_pallete = get_color(url_logo, 2)
+try:
+    image = Image.open('logo.jpg')
 
-image = Image.open('logo.jpg')
-
-st.image(image)
-
+    st.image(image)
+except Exception as e:
+    print (f"could load image {e}")
 
 url = st.sidebar.text_input('Input url to the .csv file', "None")
 uploaded_file = st.sidebar.file_uploader("Choose a file")
