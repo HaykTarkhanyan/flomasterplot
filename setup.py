@@ -17,7 +17,6 @@ setup(
           'plotly', 
           'traitlets',
           'pillow',
-          'colorthief',
           'urllib',
           'io',
           'matplotlib',

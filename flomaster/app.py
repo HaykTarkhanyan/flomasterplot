@@ -8,7 +8,7 @@ from traitlets.traitlets import default
 from col_type_detector import *
 from plots import *
 from helpers import *
-from colorthief import ColorThief
+# from colorthief import ColorThief
 
 from PIL import Image
 

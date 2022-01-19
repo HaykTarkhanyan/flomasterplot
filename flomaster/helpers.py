@@ -1,6 +1,6 @@
 from urllib.request import urlopen
 import io
-from colorthief import ColorThief
+# from colorthief import ColorThief
 
 def get_data_type_for_given_feature(data_types, feature):
     for k in list(data_types.keys()):
@@ -24,13 +24,13 @@ def add_labels_to_fig(fig, x, y, title):
         )
         
 
-def get_color(logo_path_url, num_colors=2):  
-    if logo_path_url != '':
-        fd = urlopen(logo_path_url)
-        f = io.BytesIO(fd.read())
-        color_thief = ColorThief(f)
-        return color_thief.get_palette(color_count=num_colors)
-    else:
-        return ''
+# def get_color(logo_path_url, num_colors=2):  
+#     if logo_path_url != '':
+#         fd = urlopen(logo_path_url)
+#         f = io.BytesIO(fd.read())
+#         color_thief = ColorThief(f)
+#         return color_thief.get_palette(color_count=num_colors)
+#     else:
+#         return ''
 
     
