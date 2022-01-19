@@ -141,6 +141,7 @@ def two_categorical(df, x, y, plot_type="Cross tab"):
     """
     if plot_type is None:
         plot_type = 'Cross tab'
+
     if plot_type == 'Stacked bar': # 20
         df_cross = pd.crosstab(df[x], df[y])
         data = []
@@ -149,7 +150,6 @@ def two_categorical(df, x, y, plot_type="Cross tab"):
 
         fig = go.Figure(data)
         fig.update_layout(barmode = 'stack')
-
         #For you to take a look at the result use
 
     if plot_type == "Cross tab": # 21

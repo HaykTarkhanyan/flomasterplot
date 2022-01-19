@@ -5,9 +5,9 @@ import plotly.express as px
 
 # from traitlets.traitlets import default
 
-from .col_type_detector import *
-from .plots import *
-from .helpers import *
+from col_type_detector import *
+from plots import *
+from helpers import *
 # from colorthief import ColorThief
 
 from PIL import Image
@@ -136,7 +136,8 @@ if x != "None" and y[0] != 'None':
         if plot_type == 'Cross tab':
             df_cross = two_categorical(df, x, y[0], plot_type)
             st.write(df_cross)
-        if plot_type == "Stacked Bar":
+        if plot_type == "Stacked bar":
+            fig = two_categorical(df, x, y[0], plot_type)
             add_labels_to_fig(fig, x_axis, y_axis, title)            
             st.plotly_chart(fig)
 
