@@ -204,12 +204,12 @@ def get_column_types(data: pd.DataFrame, num_unique_categories: int=None, id_thr
     remaining = remaining - set(text_cols)
 
     # id cols
-    id1 = _get_id_columns_based_on_nunique(data[list(remaining)], id_thresh)
-    id2 = _get_id_columns_based_on_name(data[list(remaining)])
+    # id1 = _get_id_columns_based_on_nunique(data[list(remaining)], id_thresh)
+    # id2 = _get_id_columns_based_on_name(data[list(remaining)])
 
-    id_cols = list(set(id1).union(set(id2)))
+    # id_cols = list(set(id1).union(set(id2)))
 
-    remaining = remaining - set(id_cols)
+    # remaining = remaining - set(id_cols)
 
     # categorical, numeric and binary cols
     result = [[col, data[col].nunique(dropna=False)] for col in remaining]
@@ -235,7 +235,7 @@ def get_column_types(data: pd.DataFrame, num_unique_categories: int=None, id_thr
     rem_list = rem_list + unique_one_class + possible_time_cols
 
     num_cols = list(set(num_cols)-set(rem_list))
-    col_types = {"remove_cols": rem_list, "datetime": date_cols, 'texts': text_cols, 'ids': id_cols, 'binary': binary_cols, 'categorical': cat_cols, 'numeric': num_cols}
+    col_types = {"remove_cols": rem_list, "datetime": date_cols, 'texts': text_cols, 'binary': binary_cols, 'categorical': cat_cols, 'numeric': num_cols}
 
 
     return col_types

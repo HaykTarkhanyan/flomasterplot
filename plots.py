@@ -95,7 +95,27 @@ def one_textual(df, col_name):
     # return plt
     # return fig
 
-def numeric_categorical(df, x, y, plot_type="Box"):
+def one_numeric_one_categorical(df, x, y, plot_type="Box"):
     """
         ["Violin", "Box"]
     """
+    fig = go.Figure()
+    
+    if plot_type=='Violin':
+        if len(y) > 1:
+            for col in y:
+                fig.add_trace(go.Violin(x=df[x], y=df[col], name=col))
+        else:
+            fig.add_trace(go.Violin(x=df[x], y=df[y[0]],name=y[0]))
+        fig.update_traces(box_visible=True, meanline_visible=True)
+        fig.update_layout(violinmode='group')
+    elif plot_type=='Box':
+        for col in y:
+            fig.add_trace(go.Box(x=df[x],
+                                y=df[col],
+                            name=col))
+    # elif plot_type=='histogram':
+    #     for col in num_cols:
+    #         fig = px.histogram(df, x=cat_col, y=col, histfunc="avg", text_auto=True)
+    fig.update_layout(xaxis=dict(title=x, zeroline=False))
+    return fig

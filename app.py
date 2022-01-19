@@ -18,15 +18,26 @@ TWO_NUMERIC = ["Scatter", "Scatter plot with margins", "2D density plot", \
                "Distplot", "Histogram"]
 TWO_NUMERIC_SORTED = ['Connected Scatter', "Area plot", "Line plot"]
 
+ONE_CATEOGIRCAL_ONE_NUMERICAL = ['Box', "Violin"]
 
 st.title("Flomaster plot")
 
+url = st.sidebar.text_input('Input url to the .csv file', "None")
 uploaded_file = st.sidebar.file_uploader("Choose a file")
 
-if uploaded_file:
-    df = pd.read_csv(uploaded_file)
+if url != "None" and len(url) > 3:
+    data_path = url 
+elif uploaded_file:
+    data_path = uploaded_file
 else:
-    df = pd.read_csv(os.path.join('data_samples',DEFAULT_FILE))
+    data_path = os.path.join('data_samples',DEFAULT_FILE)
+    
+df = pd.read_csv(data_path)
+# if uploaded_file and url == "None":
+#     df = pd.read_csv(uploaded_file)
+
+# else:
+#     df = pd.read_csv(os.path.join('data_samples',DEFAULT_FILE))
 
 data_types = get_column_types(df, num_unique_categories=2)
 
@@ -40,8 +51,11 @@ group_by = st.sidebar.selectbox("Select column representing group", ['None'] + l
 
 x_dtype = get_data_type_for_given_feature(data_types, x)
 st.write(f"{x} dtype is {x_dtype}")
+y_dtype = get_data_type_for_given_feature(data_types, y[0])
+st.write(f"{y[0]} dtype is {y_dtype}")
 
 
+# one feature
 if x != "None" and y[0] == 'None':
     if x_dtype == 'numeric':
         plot_type = st.selectbox('Select type of the plot', ONE_NUMERIC)
@@ -57,23 +71,31 @@ if x != "None" and y[0] == 'None':
         fig = one_textual(df, x)
         st.pyplot(fig)
 
+# two features
 if x != "None" and y[0] != 'None':
-    if df[x].to_list() == sorted(df[x].to_list()):
-        TWO_NUMERIC += TWO_NUMERIC_SORTED
-    
-    plot_type = st.selectbox('Select type of the plot', TWO_NUMERIC)
-    if len(df)>2000 and plot_type in ["Histogram", "Scatter"]:
-        st.markdown('**Data has two many rows, we suggest plotting \
-            with one on the folowing: "Scatter plot with margins", "2D density plot", "Distplot"**')
-    
-    if len(df)<2000 and plot_type not in ["Histogram", "Scatter"]:
-        st.markdown('**Data has two little rows, we suggest plotting \
-            with one on the folowing: "Histogram", "Scatter"**')
+    # two numeric
+    if x_dtype == "numeric" and y_dtype == 'numeric':
+        if df[x].to_list() == sorted(df[x].to_list()):
+            TWO_NUMERIC += TWO_NUMERIC_SORTED
+        
+        plot_type = st.selectbox('Select type of the plot', TWO_NUMERIC)
+        if len(df)>2000 and plot_type in ["Histogram", "Scatter"]:
+            st.markdown('**Data has two many rows, we suggest plotting \
+                with one on the folowing: "Scatter plot with margins", "2D density plot", "Distplot"**')
+        
+        if len(df)<2000 and plot_type not in ["Histogram", "Scatter"]:
+            st.markdown('**Data has two little rows, we suggest plotting \
+                with one on the folowing: "Histogram", "Scatter"**')
 
-            
+                
 
-    fig = two_numeric(df, x, y[0], plot_type)
-    st.plotly_chart(fig)
+        fig = two_numeric(df, x, y[0], plot_type)
+        st.plotly_chart(fig)
+    # one numeric one categoric
+    if x_dtype == "categorical" and y_dtype == 'numeric':
+        plot_type = st.selectbox('Select type of the plot', ONE_CATEOGIRCAL_ONE_NUMERICAL)
 
+        fig = one_numeric_one_categorical(df, x, y, plot_type)
+        st.plotly_chart(fig)
 
 # st.write(get_column_types(df))
