@@ -9,15 +9,16 @@ setup(
   author = 'Flomasterner',                   # Type in your name
   author_email = 'flo.master@pingisht.metric',      # Type in your E-Mail
   url = 'https://github.com/narine998',   # Provide either the link to your github or to your website
-  download_url = 'https://github.com/HaykTarkhanyan/flomasterplot/archive/refs/tags/v_08.tar.gz',    # I explain this later on
+  download_url = 'https://github.com/HaykTarkhanyan/flomasterplot/archive/refs/tags/v_08.tar.gz',  
   keywords = ['plotly', 'data frame', 'automation'],   # Keywords that define your package best
-  install_requires=[            # I get to this in a second
+  install_requires=[  
           'pandas',
           'streamlit', 
           'plotly', 
           'pillow',
           'matplotlib',
           'wordcloud', 
+          'scipy'
       ],
   classifiers=[
     'Development Status :: 3 - Alpha',      # Chose either "3 - Alpha", "4 - Beta" or "5 - Production/Stable" as the current state of your package

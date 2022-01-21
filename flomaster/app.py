@@ -2,38 +2,27 @@ import os
 import pandas as pd
 import streamlit as st
 import plotly.express as px
-
-# from traitlets.traitlets import default
-
 from col_type_detector import *
 from plots import *
 from helpers import *
+from configs import *
 # from colorthief import ColorThief
-
 from PIL import Image
+
+
+
 
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
 DEFAULT_FILE = 'Iris.csv'
 
-ONE_NUMERIC = ['Histogram', 'Distplot']
-ONE_CATEOGIRCAL = ['Donut', 'Pie', 'Histogram']
-TWO_NUMERIC = ["Scatter", "Scatter plot with margins", "2D density plot", \
-               "Distplot", "Histogram", "Basic Stats"]
-TWO_NUMERIC_SORTED = ['Connected Scatter', "Area plot", "Line plot"]
-
-ONE_CATEOGIRCAL_ONE_NUMERICAL = ['Box', "Violin", "Basic Stats"]
-
-TWO_CATEGORICAL = ['Cross tab', "Stacked bar"]
-ONE_DATETIME_ONE_NUMERIC = ['Connected Scatter']
-
 
 # url_logo = st.sidebar.text_input('select your logo or provide a url', "")
 # if url_logo:
 #     color_pallete = get_color(url_logo, 2)
+
 try:
     image = Image.open('logo.jpg')
-
     st.image(image)
 except Exception as e:
     print (f"could load image {e}")
@@ -49,7 +38,6 @@ else:
     data_path = os.path.join('data_samples',DEFAULT_FILE)
     
 df = pd.read_csv(data_path)
-
 data_types = get_column_types(df, num_unique_categories=2)
 
 
@@ -67,18 +55,24 @@ if y == []:
     y = ["None"]
 
 x_dtype = get_data_type_for_given_feature(data_types, x)
-st.write(f"{x} dtype is {x_dtype}")
 y_dtype = get_data_type_for_given_feature(data_types, y[0])
-st.write(f"{y[0]} dtype is {y_dtype}")
 
 # adding labels and axis names
 x_axis = st.sidebar.text_input("Please input x axis name", x)
 y_axis = st.sidebar.text_input("Please input y axis name", y[0])
 
+if y[0]!='None':
+    st.write(f"*** {y[0]} dtype is {y_dtype}***")
+    title = st.sidebar.text_input("Please input title name", f"{x_axis} vs {y_axis}")
+else:
+    title = st.sidebar.text_input("Please input title name", f"{x_axis}")
+if x != 'None':
+    st.write(f"***{x} dtype is {x_dtype}***\n\n")
+
 if y_axis == "None":
     y_axis = ""
 
-title = st.sidebar.text_input("Please input title name", f"{x_axis} vs {y_axis}")
+
 
 
 # one feature
@@ -108,21 +102,25 @@ if x != "None" and y[0] != 'None':
         
         plot_type = st.selectbox('Select type of the plot', TWO_NUMERIC)
         if len(df)>2000 and plot_type in ["Histogram", "Scatter"]:
-            st.markdown('**Data has two many rows, we suggest plotting \
-                with one on the folowing: "Scatter plot with margins", "2D density plot", "Distplot"**')
+            st.markdown('**Data has too many rows, we suggest plotting \
+                with one of the following: "Scatter plot with margins", "2D density plot", "Distplot"**')
         
-        if len(df)<2000 and plot_type not in ["Histogram", "Scatter"]:
-            st.markdown('**Data has two little rows, we suggest plotting \
-                with one on the folowing: "Histogram", "Scatter"**')
-
-                
+        elif len(df)<2000 and plot_type not in ["Histogram", "Scatter"]:
+            st.markdown('**Data has few rows, we suggest plotting \
+                with one of the following: "Histogram", "Scatter"**')     
 
         fig = two_numeric(df, x, y[0], group_by, plot_type)
+        if plot_type in ["Basic Stats",'Histogram']:
+            if y_axis == y[0]:
+                y_axis = ''
+            if x_axis == x:
+                x_axis = ''
+       
         add_labels_to_fig(fig, x_axis, y_axis, title)        
         st.plotly_chart(fig)
     # /////////////////////////////////////////////////////////
 
-    #one numeric one categoric
+    # one numeric one categoric
     if x_dtype == "categorical" and y_dtype == 'numeric':
         plot_type = st.selectbox('Select type of the plot', ONE_CATEOGIRCAL_ONE_NUMERICAL)
 
