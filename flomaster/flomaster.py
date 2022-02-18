@@ -1,28 +1,18 @@
-from .helpers import * 
-from .plots import *
-from .col_type_detector import *
+from helpers import * 
+from plots import *
+from col_type_detector import *
+from configs import *
 import warnings
-
-ONE_NUMERIC = ['Histogram', 'Distplot']
-ONE_CATEOGIRCAL = ['Donut', 'Pie', 'Histogram']
-ONE_TEXT = ['Wordcloud']
-TWO_NUMERIC = ["Scatter", "Scatter plot with margins", "2D density plot", "Distplot", "Histogram", "Basic Stats"]
-TWO_NUMERIC_SORTED = ['Connected Scatter', "Area plot", "Line plot"]
-ONE_CATEOGIRCAL_ONE_NUMERICAL = ['Box', "Violin", "Basic Stats"]
-TWO_CATEGORICAL = ['Cross tab', "Stacked bar"]
-ONE_DATETIME_ONE_NUMERIC = ['Connected Scatter']
-
-
 
 
 def generate_flomaster_plot(df, x="None", y=[], group_by=None, plot_type=None, x_axis=None, y_axis=None, title=None):
     """
-    Function generates interactiv plot for given dataframe and columns
+    Function generates interactive plot for given dataframe and columns
 
     Args:
         df (pd.DataFrame)
         x (str): name of the column to use as x_axis
-        y (str or list): either one column or list of columns to plot at y axis
+        y (str or list): either one column or list of columns to plot as y axis
         group_by (str): column by which to group data (default is None)
         plot_type (str): possible values vary depending on input data, the list is`            
             ONE_NUMERIC = ['Histogram', 'Distplot']
@@ -34,12 +24,12 @@ def generate_flomaster_plot(df, x="None", y=[], group_by=None, plot_type=None, x
             TWO_CATEGORICAL = ['Cross tab', "Stacked bar"]
             ONE_DATETIME_ONE_NUMERIC = ['Connected Scatter']   
         x_axis (str): defaults to x columns name
-        y_axis (str): defaults to y, if y is a list then to first element of y
+        y_axis (str): defaults to y, if y is a list then to the first element of y
         title (str): defaults to f"{x_axis} vs {y_axis}"
     
     Note:
-        Some illogical results might occur in case when column_type_detector classifies some
-        column incorrectly, also note that this package is in a very early stage of development
+        Some illogical results might occur in case of column_type_detector classifies some
+        columns incorrectly, also note that this package is in a very early stage of development
 
     Raises:
         ValueError: if plot_type is not from allowed list
@@ -111,19 +101,22 @@ def generate_flomaster_plot(df, x="None", y=[], group_by=None, plot_type=None, x
             possible_graphs = TWO_NUMERIC 
 
             if len(df)>2000 and plot_type in ["Histogram", "Scatter"]:
-                warnings.warn('**Data has two many rows, we suggest plotting \
-                    with one on the folowing: "Scatter plot with margins", "2D density plot", "Distplot"**')
+                warnings.warn('**Data has too many rows, we suggest plotting \
+                    with one of the following: "Scatter plot with margins", "2D density plot", "Distplot"**')
             
             if len(df)<2000 and plot_type not in ["Histogram", "Scatter", "Basic Stats"]:
-                warnings.warn('**Data has two little rows, we suggest plotting \
-                    with one on the folowing: "Histogram", "Scatter"**')
+                warnings.warn('**Data has few rows, we suggest plotting \
+                    with one of the following: "Histogram", "Scatter"**')
 
-                    
             if (plot_type is not None) and (plot_type not in possible_graphs):
                 raise ValueError(f"Please select one from {possible_graphs}")
             else:
-            
                 fig = two_numeric(df, x, y[0], group_by, plot_type)
+                if plot_type in ["Basic Stats",'Histogram']:
+                    if y_axis == y[0]:
+                        y_axis = ''
+                    if x_axis == x:
+                        x_axis = ''
                 add_labels_to_fig(fig, x_axis, y_axis, title)        
                 return fig         
 
@@ -148,7 +141,7 @@ def generate_flomaster_plot(df, x="None", y=[], group_by=None, plot_type=None, x
                 if plot_type == 'Cross tab':
                     fig = two_categorical(df, x, y[0], plot_type)
                     
-                if plot_type == 'Stacked bar':
+                elif plot_type == 'Stacked bar':
                     fig = two_categorical(df, x, y[0], plot_type)
                     add_labels_to_fig(fig, x_axis, y_axis, title)   
                 return fig         
@@ -167,5 +160,5 @@ def generate_flomaster_plot(df, x="None", y=[], group_by=None, plot_type=None, x
                 add_labels_to_fig(fig, x_axis, y_axis, title)        
                 return fig
     
-    return f"Something went wrong, contac team Flomaster"
+    return "Something went wrong, contact team Flomaster"
      

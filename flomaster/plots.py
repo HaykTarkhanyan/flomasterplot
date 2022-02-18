@@ -3,8 +3,8 @@ import plotly.graph_objects as go
 import plotly.figure_factory as ff
 import matplotlib.pyplot as plt
 from wordcloud import WordCloud
-
 import pandas as pd
+
 
 
 def one_numeric(df, col_name, group_by=None, plot_type="Histogram"):
@@ -109,11 +109,8 @@ def one_numeric_one_categorical(df, x, y, group_by=None, plot_type="Box"):
 
     fig = go.Figure()
     if plot_type=='Violin': # 17
-        if len(y) > 1:
-            for col in y:
-                fig.add_trace(go.Violin(x=df[x], y=df[col], name=col))
-        else:
-            fig.add_trace(go.Violin(x=df[x], y=df[y[0]],name=y[0]))
+        for col in y:
+            fig.add_trace(go.Violin(x=df[x], y=df[col], name=col))
         fig.update_traces(box_visible=True, meanline_visible=True)
         fig.update_layout(violinmode='group') 
     elif plot_type=='Box': # 18
@@ -137,7 +134,7 @@ def one_numeric_one_categorical(df, x, y, group_by=None, plot_type="Box"):
 
 def two_categorical(df, x, y, plot_type="Cross tab"):
     """
-        ['Cross tab', "Stacked bone_numeric_one_categoricalar"]
+        ['Cross tab', "Stacked bone_numeric_one_categorical"]
     """
     if plot_type is None:
         plot_type = 'Cross tab'
