@@ -5,12 +5,22 @@ import plotly.express as px
 from col_type_detector import *
 from plots import *
 from helpers import *
-from configs import *
+# from configs import *
 # from colorthief import ColorThief
 from PIL import Image
 
 
 
+ONE_NUMERIC = ['Histogram', 'Distplot']
+ONE_CATEOGIRCAL = ['Donut', 'Pie', 'Histogram']
+TWO_NUMERIC = ["Scatter", "Scatter plot with margins", "2D density plot", \
+               "Distplot", "Histogram", "Basic Stats"]
+TWO_NUMERIC_SORTED = ['Connected Scatter', "Area plot", "Line plot"]
+
+ONE_CATEOGIRCAL_ONE_NUMERICAL = ['Box', "Violin", "Basic Stats"]
+
+TWO_CATEGORICAL = ['Cross tab', "Stacked bar"]
+ONE_DATETIME_ONE_NUMERIC = ['Connected Scatter']
 
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
@@ -38,12 +48,12 @@ else:
     data_path = os.path.join('data_samples',DEFAULT_FILE)
     
 df = pd.read_csv(data_path)
-<<<<<<< HEAD
 # added for qless
-df = get_datetime_features(df, "Date")
+try:
+    df = get_datetime_features(df, "Date")
+except:
+    print("expects to have column named Date, load loc.csv file, զուտ արագ պետք էր կոդը նենց սարքեմ որ աշխատի, փեքիջում սենց խնդիր չկա")
 df = df.reset_index()
-=======
->>>>>>> 2deb99503d57f2d448c6ffdfc5257d6564e9bd43
 data_types = get_column_types(df, num_unique_categories=2)
 
 

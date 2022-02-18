@@ -1,7 +1,7 @@
 from helpers import * 
 from plots import *
 from col_type_detector import *
-from configs import *
+# from configs import *
 import warnings
 
 
