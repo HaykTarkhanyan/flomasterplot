@@ -45,14 +45,14 @@ if url != "None" and len(url) > 3:
 elif uploaded_file:
     data_path = uploaded_file
 else:
-    data_path = os.path.join('data_samples',DEFAULT_FILE)
+    data_path = DEFAULT_FILE
     
 df = pd.read_csv(data_path)
 # added for qless
 try:
     df = get_datetime_features(df, "Date")
 except:
-    print("expects to have column named Date, load loc.csv file, զուտ արագ պետք էր կոդը նենց սարքեմ որ աշխատի, փեքիջում սենց խնդիր չկա")
+    print("expects to have column named Date, load loc.csv file, զուտ արագ պետք էր կոդը նենց սարքեմ որ աշխատի, փեքիջում սենց խնդիր չկա  ")
 df = df.reset_index()
 data_types = get_column_types(df, num_unique_categories=2)
 
