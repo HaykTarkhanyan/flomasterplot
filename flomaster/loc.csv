@@ -1,0 +1,267 @@
+Location Id,Date,Location,Total Joined,Total Arrived,Total No Shows
+12511,2021-08-04,MSB Revenue,59,104.0,-45
+12511,2021-08-05,MSB Revenue,64,18.0,46
+12511,2021-08-06,MSB Revenue,72,14.0,58
+12511,2021-08-09,MSB Revenue,95,37.0,58
+12511,2021-08-10,MSB Revenue,67,18.0,49
+12511,2021-08-11,MSB Revenue,47,10.0,37
+12511,2021-08-12,MSB Revenue,36,13.0,23
+12511,2021-08-13,MSB Revenue,45,14.0,31
+12511,2021-08-16,MSB Revenue,45,9.0,36
+12511,2021-08-17,MSB Revenue,40,23.0,17
+12511,2021-08-18,MSB Revenue,44,21.0,23
+12511,2021-08-19,MSB Revenue,29,23.0,6
+12511,2021-08-20,MSB Revenue,41,23.0,18
+12511,2021-08-23,MSB Revenue,38,3.0,35
+12511,2021-08-24,MSB Revenue,43,15.0,28
+12511,2021-08-25,MSB Revenue,37,15.0,22
+12511,2021-08-26,MSB Revenue,46,27.0,19
+12511,2021-08-27,MSB Revenue,30,6.0,24
+12511,2021-08-30,MSB Revenue,26,2.0,24
+12511,2021-08-31,MSB Revenue,34,18.0,16
+12511,2021-09-01,MSB Revenue,48,10.0,38
+12511,2021-09-02,MSB Revenue,26,,26
+12511,2021-09-03,MSB Revenue,15,,15
+12511,2021-09-07,MSB Revenue,46,7.0,39
+12511,2021-09-08,MSB Revenue,52,10.0,42
+12511,2021-09-09,MSB Revenue,65,16.0,49
+12511,2021-09-10,MSB Revenue,57,11.0,46
+12511,2021-09-13,MSB Revenue,36,1.0,35
+12511,2021-09-14,MSB Revenue,44,22.0,22
+12511,2021-09-15,MSB Revenue,51,38.0,13
+12511,2021-09-16,MSB Revenue,36,33.0,3
+12511,2021-09-17,MSB Revenue,38,11.0,27
+12511,2021-09-20,MSB Revenue,40,12.0,28
+12511,2021-09-21,MSB Revenue,24,6.0,18
+12511,2021-09-22,MSB Revenue,34,44.0,-10
+12511,2021-09-23,MSB Revenue,29,30.0,-1
+12511,2021-09-24,MSB Revenue,40,11.0,29
+12511,2021-09-27,MSB Revenue,28,19.0,9
+12511,2021-09-28,MSB Revenue,32,19.0,13
+12511,2021-09-29,MSB Revenue,33,16.0,17
+12511,2021-09-30,MSB Revenue,45,10.0,35
+12511,2021-10-01,MSB Revenue,40,51.0,-11
+12511,2021-10-04,MSB Revenue,47,19.0,28
+12511,2021-10-05,MSB Revenue,27,53.0,-26
+12511,2021-10-06,MSB Revenue,38,9.0,29
+12511,2021-10-07,MSB Revenue,38,12.0,26
+12511,2021-10-08,MSB Revenue,37,6.0,31
+12511,2021-10-12,MSB Revenue,50,18.0,32
+12511,2021-10-13,MSB Revenue,27,4.0,23
+12511,2021-10-14,MSB Revenue,33,5.0,28
+12511,2021-10-15,MSB Revenue,31,11.0,20
+12511,2021-10-18,MSB Revenue,35,16.0,19
+12511,2021-10-19,MSB Revenue,47,35.0,12
+12511,2021-10-20,MSB Revenue,40,10.0,30
+12511,2021-10-21,MSB Revenue,29,33.0,-4
+12511,2021-10-22,MSB Revenue,37,19.0,18
+12511,2021-10-25,MSB Revenue,50,16.0,34
+12511,2021-10-26,MSB Revenue,27,52.0,-25
+12511,2021-10-27,MSB Revenue,34,19.0,15
+12511,2021-10-28,MSB Revenue,34,7.0,27
+12511,2021-10-29,MSB Revenue,22,40.0,-18
+12511,2021-11-01,MSB Revenue,24,4.0,20
+12511,2021-11-02,MSB Revenue,30,9.0,21
+12511,2021-11-03,MSB Revenue,41,10.0,31
+12511,2021-11-04,MSB Revenue,33,48.0,-15
+12511,2021-11-05,MSB Revenue,40,6.0,34
+12511,2021-11-08,MSB Revenue,44,75.0,-31
+12511,2021-11-09,MSB Revenue,38,,38
+12511,2021-11-10,MSB Revenue,50,59.0,-9
+12511,2021-11-12,MSB Revenue,41,34.0,7
+12511,2021-11-15,MSB Revenue,42,27.0,15
+12511,2021-11-16,MSB Revenue,28,29.0,-1
+12511,2021-11-17,MSB Revenue,26,21.0,5
+12511,2021-11-18,MSB Revenue,24,15.0,9
+12511,2021-11-19,MSB Revenue,30,8.0,22
+12511,2021-11-22,MSB Revenue,27,47.0,-20
+12511,2021-11-23,MSB Revenue,38,13.0,25
+12511,2021-11-24,MSB Revenue,28,1.0,27
+12511,2021-11-26,MSB Revenue,15,2.0,13
+12511,2021-11-29,MSB Revenue,29,12.0,17
+12511,2021-11-30,MSB Revenue,39,17.0,22
+12511,2021-12-01,MSB Revenue,44,10.0,34
+12511,2021-12-02,MSB Revenue,30,3.0,27
+12511,2021-12-03,MSB Revenue,52,2.0,50
+12511,2021-12-06,MSB Revenue,44,10.0,34
+12511,2021-12-07,MSB Revenue,42,8.0,34
+12511,2021-12-08,MSB Revenue,33,5.0,28
+12511,2021-12-09,MSB Revenue,43,11.0,32
+12511,2021-12-10,MSB Revenue,27,9.0,18
+12511,2021-12-13,MSB Revenue,38,4.0,34
+12511,2021-12-14,MSB Revenue,46,15.0,31
+12511,2021-12-15,MSB Revenue,31,10.0,21
+12511,2021-12-16,MSB Revenue,37,2.0,35
+12511,2021-12-17,MSB Revenue,41,10.0,31
+12511,2021-12-20,MSB Revenue,45,9.0,36
+12511,2021-12-21,MSB Revenue,45,14.0,31
+12511,2021-12-22,MSB Revenue,38,22.0,16
+12511,2021-12-23,MSB Revenue,40,7.0,33
+12511,2021-12-24,MSB Revenue,16,1.0,15
+12511,2021-12-27,MSB Revenue,28,2.0,26
+12511,2021-12-28,MSB Revenue,37,4.0,33
+12511,2021-12-29,MSB Revenue,31,,31
+12511,2021-12-30,MSB Revenue,44,1.0,43
+12511,2021-12-31,MSB Revenue,18,14.0,4
+12511,2022-01-03,MSB Revenue,33,2.0,31
+12511,2022-01-04,MSB Revenue,41,8.0,33
+12511,2022-01-05,MSB Revenue,34,11.0,23
+12511,2022-01-06,MSB Revenue,42,22.0,20
+12511,2022-01-07,MSB Revenue,41,21.0,20
+12511,2022-01-10,MSB Revenue,44,25.0,19
+12511,2022-01-11,MSB Revenue,42,14.0,28
+12511,2022-01-12,MSB Revenue,40,9.0,31
+12511,2022-01-13,MSB Revenue,35,14.0,21
+12511,2022-01-14,MSB Revenue,34,14.0,20
+12511,2022-01-18,MSB Revenue,40,5.0,35
+12511,2022-01-19,MSB Revenue,38,5.0,33
+12511,2022-01-20,MSB Revenue,43,10.0,33
+12511,2022-01-21,MSB Revenue,47,17.0,30
+12511,2022-01-24,MSB Revenue,49,16.0,33
+12511,2022-01-25,MSB Revenue,49,22.0,27
+12511,2022-01-26,MSB Revenue,42,13.0,29
+12511,2022-01-27,MSB Revenue,33,6.0,27
+12511,2022-01-28,MSB Revenue,37,8.0,29
+12511,2022-01-31,MSB Revenue,20,5.0,15
+12511,2022-02-01,MSB Revenue,46,15.0,31
+12511,2022-02-02,MSB Revenue,53,7.0,46
+12511,2022-02-03,MSB Revenue,39,12.0,27
+12511,2022-02-04,MSB Revenue,44,9.0,35
+12511,2022-02-07,MSB Revenue,60,9.0,51
+12511,2022-02-08,MSB Revenue,52,1.0,51
+12511,2022-02-09,MSB Revenue,55,21.0,34
+12511,2022-02-10,MSB Revenue,48,8.0,40
+12511,2022-02-11,MSB Revenue,49,2.0,47
+18821,2021-09-17,Test,1,1.0,0
+7100000030,2021-08-04,Dept. of Licenses & Inspections,167,122.0,45
+7100000030,2021-08-05,Dept. of Licenses & Inspections,180,116.0,64
+7100000030,2021-08-06,Dept. of Licenses & Inspections,184,108.0,76
+7100000030,2021-08-09,Dept. of Licenses & Inspections,225,119.0,106
+7100000030,2021-08-10,Dept. of Licenses & Inspections,169,103.0,66
+7100000030,2021-08-11,Dept. of Licenses & Inspections,150,72.0,78
+7100000030,2021-08-12,Dept. of Licenses & Inspections,169,95.0,74
+7100000030,2021-08-13,Dept. of Licenses & Inspections,147,76.0,71
+7100000030,2021-08-16,Dept. of Licenses & Inspections,177,88.0,89
+7100000030,2021-08-17,Dept. of Licenses & Inspections,126,98.0,28
+7100000030,2021-08-18,Dept. of Licenses & Inspections,176,104.0,72
+7100000030,2021-08-19,Dept. of Licenses & Inspections,145,71.0,74
+7100000030,2021-08-20,Dept. of Licenses & Inspections,176,99.0,77
+7100000030,2021-08-23,Dept. of Licenses & Inspections,151,80.0,71
+7100000030,2021-08-24,Dept. of Licenses & Inspections,176,103.0,73
+7100000030,2021-08-25,Dept. of Licenses & Inspections,92,50.0,42
+7100000030,2021-08-26,Dept. of Licenses & Inspections,208,104.0,104
+7100000030,2021-08-27,Dept. of Licenses & Inspections,164,88.0,76
+7100000030,2021-08-30,Dept. of Licenses & Inspections,194,99.0,95
+7100000030,2021-08-31,Dept. of Licenses & Inspections,166,86.0,80
+7100000030,2021-09-01,Dept. of Licenses & Inspections,155,84.0,71
+7100000030,2021-09-02,Dept. of Licenses & Inspections,16,4.0,12
+7100000030,2021-09-03,Dept. of Licenses & Inspections,31,3.0,28
+7100000030,2021-09-07,Dept. of Licenses & Inspections,251,145.0,106
+7100000030,2021-09-08,Dept. of Licenses & Inspections,193,112.0,81
+7100000030,2021-09-09,Dept. of Licenses & Inspections,207,139.0,68
+7100000030,2021-09-10,Dept. of Licenses & Inspections,207,100.0,107
+7100000030,2021-09-13,Dept. of Licenses & Inspections,195,105.0,90
+7100000030,2021-09-14,Dept. of Licenses & Inspections,163,103.0,60
+7100000030,2021-09-15,Dept. of Licenses & Inspections,172,127.0,45
+7100000030,2021-09-16,Dept. of Licenses & Inspections,159,95.0,64
+7100000030,2021-09-17,Dept. of Licenses & Inspections,178,99.0,79
+7100000030,2021-09-20,Dept. of Licenses & Inspections,219,106.0,113
+7100000030,2021-09-21,Dept. of Licenses & Inspections,205,136.0,69
+7100000030,2021-09-22,Dept. of Licenses & Inspections,172,94.0,78
+7100000030,2021-09-23,Dept. of Licenses & Inspections,184,109.0,75
+7100000030,2021-09-24,Dept. of Licenses & Inspections,195,122.0,73
+7100000030,2021-09-27,Dept. of Licenses & Inspections,201,111.0,90
+7100000030,2021-09-28,Dept. of Licenses & Inspections,177,97.0,80
+7100000030,2021-09-29,Dept. of Licenses & Inspections,99,62.0,37
+7100000030,2021-09-30,Dept. of Licenses & Inspections,207,129.0,78
+7100000030,2021-10-01,Dept. of Licenses & Inspections,151,134.0,17
+7100000030,2021-10-04,Dept. of Licenses & Inspections,163,95.0,68
+7100000030,2021-10-05,Dept. of Licenses & Inspections,187,128.0,59
+7100000030,2021-10-06,Dept. of Licenses & Inspections,156,88.0,68
+7100000030,2021-10-07,Dept. of Licenses & Inspections,145,87.0,58
+7100000030,2021-10-08,Dept. of Licenses & Inspections,172,107.0,65
+7100000030,2021-10-12,Dept. of Licenses & Inspections,246,157.0,89
+7100000030,2021-10-13,Dept. of Licenses & Inspections,186,135.0,51
+7100000030,2021-10-14,Dept. of Licenses & Inspections,176,111.0,65
+7100000030,2021-10-15,Dept. of Licenses & Inspections,193,125.0,68
+7100000030,2021-10-18,Dept. of Licenses & Inspections,225,110.0,115
+7100000030,2021-10-19,Dept. of Licenses & Inspections,187,109.0,78
+7100000030,2021-10-20,Dept. of Licenses & Inspections,194,112.0,82
+7100000030,2021-10-21,Dept. of Licenses & Inspections,149,121.0,28
+7100000030,2021-10-22,Dept. of Licenses & Inspections,171,105.0,66
+7100000030,2021-10-25,Dept. of Licenses & Inspections,185,107.0,78
+7100000030,2021-10-26,Dept. of Licenses & Inspections,160,97.0,63
+7100000030,2021-10-27,Dept. of Licenses & Inspections,93,56.0,37
+7100000030,2021-10-28,Dept. of Licenses & Inspections,204,108.0,96
+7100000030,2021-10-29,Dept. of Licenses & Inspections,167,101.0,66
+7100000030,2021-11-01,Dept. of Licenses & Inspections,169,102.0,67
+7100000030,2021-11-02,Dept. of Licenses & Inspections,135,101.0,34
+7100000030,2021-11-03,Dept. of Licenses & Inspections,146,89.0,57
+7100000030,2021-11-04,Dept. of Licenses & Inspections,156,105.0,51
+7100000030,2021-11-05,Dept. of Licenses & Inspections,148,111.0,37
+7100000030,2021-11-08,Dept. of Licenses & Inspections,180,88.0,92
+7100000030,2021-11-09,Dept. of Licenses & Inspections,191,109.0,82
+7100000030,2021-11-10,Dept. of Licenses & Inspections,199,107.0,92
+7100000030,2021-11-12,Dept. of Licenses & Inspections,247,148.0,99
+7100000030,2021-11-15,Dept. of Licenses & Inspections,182,104.0,78
+7100000030,2021-11-16,Dept. of Licenses & Inspections,196,113.0,83
+7100000030,2021-11-17,Dept. of Licenses & Inspections,178,108.0,70
+7100000030,2021-11-18,Dept. of Licenses & Inspections,169,105.0,64
+7100000030,2021-11-19,Dept. of Licenses & Inspections,139,86.0,53
+7100000030,2021-11-22,Dept. of Licenses & Inspections,182,108.0,74
+7100000030,2021-11-23,Dept. of Licenses & Inspections,160,101.0,59
+7100000030,2021-11-24,Dept. of Licenses & Inspections,85,59.0,26
+7100000030,2021-11-26,Dept. of Licenses & Inspections,125,108.0,17
+7100000030,2021-11-29,Dept. of Licenses & Inspections,197,126.0,71
+7100000030,2021-11-30,Dept. of Licenses & Inspections,179,131.0,48
+7100000030,2021-12-01,Dept. of Licenses & Inspections,196,100.0,96
+7100000030,2021-12-02,Dept. of Licenses & Inspections,173,114.0,59
+7100000030,2021-12-03,Dept. of Licenses & Inspections,182,118.0,64
+7100000030,2021-12-06,Dept. of Licenses & Inspections,176,114.0,62
+7100000030,2021-12-07,Dept. of Licenses & Inspections,144,92.0,52
+7100000030,2021-12-08,Dept. of Licenses & Inspections,181,112.0,69
+7100000030,2021-12-09,Dept. of Licenses & Inspections,153,113.0,40
+7100000030,2021-12-10,Dept. of Licenses & Inspections,134,80.0,54
+7100000030,2021-12-13,Dept. of Licenses & Inspections,196,125.0,71
+7100000030,2021-12-14,Dept. of Licenses & Inspections,168,98.0,70
+7100000030,2021-12-15,Dept. of Licenses & Inspections,171,92.0,79
+7100000030,2021-12-16,Dept. of Licenses & Inspections,158,87.0,71
+7100000030,2021-12-17,Dept. of Licenses & Inspections,136,111.0,25
+7100000030,2021-12-20,Dept. of Licenses & Inspections,207,135.0,72
+7100000030,2021-12-21,Dept. of Licenses & Inspections,146,88.0,58
+7100000030,2021-12-22,Dept. of Licenses & Inspections,68,49.0,19
+7100000030,2021-12-23,Dept. of Licenses & Inspections,172,111.0,61
+7100000030,2021-12-27,Dept. of Licenses & Inspections,127,77.0,50
+7100000030,2021-12-28,Dept. of Licenses & Inspections,121,78.0,43
+7100000030,2021-12-29,Dept. of Licenses & Inspections,58,37.0,21
+7100000030,2021-12-30,Dept. of Licenses & Inspections,138,91.0,47
+7100000030,2021-12-31,Dept. of Licenses & Inspections,60,38.0,22
+7100000030,2022-01-03,Dept. of Licenses & Inspections,77,46.0,31
+7100000030,2022-01-04,Dept. of Licenses & Inspections,93,53.0,40
+7100000030,2022-01-05,Dept. of Licenses & Inspections,131,66.0,65
+7100000030,2022-01-06,Dept. of Licenses & Inspections,128,86.0,42
+7100000030,2022-01-07,Dept. of Licenses & Inspections,136,79.0,57
+7100000030,2022-01-10,Dept. of Licenses & Inspections,173,105.0,68
+7100000030,2022-01-11,Dept. of Licenses & Inspections,149,92.0,57
+7100000030,2022-01-12,Dept. of Licenses & Inspections,158,99.0,59
+7100000030,2022-01-13,Dept. of Licenses & Inspections,164,94.0,70
+7100000030,2022-01-14,Dept. of Licenses & Inspections,142,83.0,59
+7100000030,2022-01-18,Dept. of Licenses & Inspections,198,106.0,92
+7100000030,2022-01-19,Dept. of Licenses & Inspections,151,71.0,80
+7100000030,2022-01-20,Dept. of Licenses & Inspections,134,75.0,59
+7100000030,2022-01-21,Dept. of Licenses & Inspections,148,91.0,57
+7100000030,2022-01-24,Dept. of Licenses & Inspections,185,106.0,79
+7100000030,2022-01-25,Dept. of Licenses & Inspections,159,80.0,79
+7100000030,2022-01-26,Dept. of Licenses & Inspections,76,51.0,25
+7100000030,2022-01-27,Dept. of Licenses & Inspections,182,80.0,102
+7100000030,2022-01-28,Dept. of Licenses & Inspections,175,108.0,67
+7100000030,2022-01-31,Dept. of Licenses & Inspections,171,90.0,81
+7100000030,2022-02-01,Dept. of Licenses & Inspections,178,111.0,67
+7100000030,2022-02-02,Dept. of Licenses & Inspections,172,97.0,75
+7100000030,2022-02-03,Dept. of Licenses & Inspections,192,77.0,115
+7100000030,2022-02-04,Dept. of Licenses & Inspections,178,74.0,104
+7100000030,2022-02-07,Dept. of Licenses & Inspections,205,110.0,95
+7100000030,2022-02-08,Dept. of Licenses & Inspections,162,97.0,65
+7100000030,2022-02-09,Dept. of Licenses & Inspections,179,97.0,82
+7100000030,2022-02-10,Dept. of Licenses & Inspections,191,86.0,105
+7100000030,2022-02-11,Dept. of Licenses & Inspections,180,82.0,98

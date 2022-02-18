@@ -49,7 +49,9 @@ else:
     data_path = os.path.join('data_samples',DEFAULT_FILE)
     
 df = pd.read_csv(data_path)
-
+# added for qless
+df = get_datetime_features(df, "Date")
+df = df.reset_index()
 data_types = get_column_types(df, num_unique_categories=2)
 
 
